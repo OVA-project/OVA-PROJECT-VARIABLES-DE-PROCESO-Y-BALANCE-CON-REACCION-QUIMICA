@@ -1933,9 +1933,9 @@ function getContentForButton(buttonId) {
         Justifica tu respuesta brevemente con una fórmula o concepto.
       <br><br>
       <div class="encuesta-container">
-      <button onclick="openFormModalWithUrl('https://forms.gle/D1zG43L2XyHj49UP6?embedded=true')" class="btn-encuesta">
-        📝 Haz clic aquí para registrar tus respuestas y asistencia
-      </button>
+      <button onclick="openFormModalWithUrl('https://docs.google.com/forms/d/e/1FAIpQLSf73hw8HGPKmc5MLcv6InE9GnlT2Ov3sW7PNIdnKs4ev86LDQ/viewform?embedded=true')" class="btn-encuesta">
+          📝 Haz clic aquí para registrar tus respuestas y asistencia
+        </button>
       </div>`,
       steps: [],
     },
