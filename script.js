@@ -1933,7 +1933,7 @@ function getContentForButton(buttonId) {
         Justifica tu respuesta brevemente con una fórmula o concepto.
       <br><br>
       <div class="encuesta-container">
-      <button onclick="openFormModalWithUrl('https://forms.gle/amFUK74GvPvyyJcA8?embedded=true')" class="btn-encuesta">
+      <button onclick="openFormModalWithUrl('https://forms.gle/D1zG43L2XyHj49UP6?embedded=true')" class="btn-encuesta">
         📝 Haz clic aquí para registrar tus respuestas y asistencia
       </button>
       </div>`,
