@@ -1897,14 +1897,14 @@ function getContentForButton(buttonId) {
       </ul>
       <!-- Aquí va la imagen -->
       <figure style="text-align:center; margin-top:15px;">
-        <img src="images/63.PNG" alt="Diagrama de proceso" style="max-width:400px; border-radius:8px;" />
+        <img src="images/63.png" alt="Diagrama de proceso" style="max-width:400px; border-radius:8px;" />
         <figcaption style="font-size:14px; font-style:italic; margin-top:6px;">
           Tabla 1: Densidad de soluciones acuosas orgánicas.<br>
           Tomado de (Perry, R. H., Green, D. W., & Maloney, J. O. Manual del ingeniero químico, 6.ª ed., McGraw-Hill.)
         </figcaption>
       </figure>`,
       steps: [],
-      image: "images/56.PNG",
+      image: "images/56.png",
     },
     "1-6-desafioG": {
       title: "Realiza estos enunciados",
