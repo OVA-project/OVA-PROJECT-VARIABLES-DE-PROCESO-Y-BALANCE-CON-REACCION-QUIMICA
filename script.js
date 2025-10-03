@@ -244,7 +244,7 @@ const modulesData = {
         },
         sidebarButtons: [
           { id: "que-es", label: "Introducción", icon: "fas fa-question-circle", type: "content" },
-          { id: "variablesP", label: "Las variables de proceso", icon: "fas fa-bullseye", type: "content" },
+          { id: "variablesP", label: "Las variables de proceso", icon: "fas fa-video", type: "content" },
           
         ],
       },
@@ -260,7 +260,7 @@ const modulesData = {
         },
         sidebarButtons: [
           { id: "que-es", label: "Isla de la presión", icon: "fas fa-stopwatch", type: "content" },
-          { id: "Cpresion", label: "¿Qué es la presión?", icon: "fas fa-stopwatch", type: "content" },
+          { id: "Cpresion", label: "¿Qué es la presión?", icon: "fas fa-video", type: "content" },
           { id: "Tpresion", label: "Tipos de presión", icon: "fas fa-stopwatch", type: "content" },
           { id: "medicion", label: "Instrumentos de medición", icon: "fas fa-stopwatch", type: "content" },
           { id: "desafio", label: "Desafío", icon: "fas fa-lightbulb", type: "content" },
@@ -282,7 +282,7 @@ const modulesData = {
           { id: "que-es", label: "El Desafío de Calor'Bel", icon: "fas fa-question-circle", type: "content" },
           { id: "islaC", label: "Isla del fuego eterno", icon: "fas fa-fire", type: "content" },
           { id: "conversion", label: "Conversión de temperaturas", icon: "fas fa-fire", type: "content" },
-          { id: "Vtemperatura", label: "Temperatura", icon: "fas fa-fire", type: "content" },
+          { id: "Vtemperatura", label: "Temperatura", icon: "fas fa-video", type: "content" },
           { id: "test", label: "Desafío", icon: "fas fa-lightbulb", type: "test" },
         ],
       },
@@ -300,7 +300,7 @@ const modulesData = {
         sidebarButtons: [
           { id: "que-es", label: "Prueba del capitán Venturi", icon: "fas fa-question-circle", type: "content" },
           { id: "Iflujo", label: "Isla del gran flujo", icon: "fas fa-tint", type: "content" },
-          { id: "Vflujo", label: "Flujo", icon: "fas fa-tint", type: "content" },
+          { id: "Vflujo", label: "Flujo", icon: "fas fa-video", type: "content" },
           { id: "Tflujo", label: "Tipos de flujo", icon: "fas fa-tint", type: "content" },
           { id: "test", label: "Desafío", icon: "fas fa-lightbulb", type: "test" },
         ],
@@ -319,7 +319,7 @@ const modulesData = {
           { id: "que-es", label: "El Reto de Alquimix", icon: "fas fa-question-circle", type: "content" },
           { id: "concentracion", label: "Isla de la concentración", icon: "fas fa-flask	", type: "content" },
           { id: "expresar", label: "Formas de expresar la concentración", icon: "fas fa-flask	", type: "content" },
-          { id: "VideoC", label: "Concentración", icon: "fas fa-flask", type: "content" },
+          { id: "VideoC", label: "Concentración", icon: "fas fa-video", type: "content" },
           { id: "desafioA", label: "Desafío", icon: "fas fa-lightbulb", type: "content" },
         ],
       },
@@ -358,7 +358,7 @@ const modulesData = {
         },
         sidebarButtons: [
           { id: "que-es", label: 'Leyenda "Monarca de los procesos"', icon: "fas fa-question-circle", type: "content" },
-          { id: "video-brc", label: 'Balances con Reacción química', icon: "fas fa-bullseye", type: "content" },
+          { id: "video-brc", label: 'Balances con Reacción química', icon: "fas fa-video", type: "content" },
         ],
       },
       {
@@ -378,7 +378,7 @@ const modulesData = {
       },
       {
         id: 3,
-        title: "Isla velocidad <br>de reacción",
+        title: "Isla velocidad de reacción",
         icon: "fas fa-dragon",
         image: "images2/13.jpeg",
         content: {
@@ -404,11 +404,12 @@ const modulesData = {
         },
         sidebarButtons: [
           { id: "que-es", label: "Conversión", icon: "fas fa-question-circle", type: "content" },
+          { id: "video", label: "Video explicativo", icon: "fas fa-video", type: "content" },
         ],
       },
       {
         id: 5,
-        title: "Isla reactivo límite <br>y en exceso",
+        title: "Isla de reactivos",
         icon: "fas fa-life-ring",
         image: "images2/15.jpg",
         content: {
@@ -419,6 +420,7 @@ const modulesData = {
         },
         sidebarButtons: [
           { id: "que-es", label: "Reactivo límite y en exceso", icon: "fas fa-question-circle", type: "content" },
+          { id: "video", label: "Video explicativo", icon: "fas fa-video", type: "content" },
         ],
       },
       {
@@ -434,6 +436,7 @@ const modulesData = {
         },
         sidebarButtons: [
           { id: "que-es", label: "Selectividad y Rendimiento Fraccional", icon: "fas fa-question-circle", type: "content" },
+          { id: "video", label: "Video explicativo", icon: "fas fa-video", type: "content" },
         ],
       },
       {
@@ -449,6 +452,7 @@ const modulesData = {
         },
         sidebarButtons: [
           { id: "que-es", label: "Desafío final", icon: "fas fa-question-circle", type: "content" },
+          { id: "ejercicios", label: "Ejercicios", icon: "fas fa-book", type: "content" },
         ],
       },
     ],
@@ -1897,7 +1901,7 @@ function getContentForButton(buttonId) {
       </ul>
       <!-- Aquí va la imagen -->
       <figure style="text-align:center; margin-top:15px;">
-        <img src="images/63.png" alt="Diagrama de proceso" style="max-width:400px; border-radius:8px;" />
+        <img src="images/63.png" alt="Diagrama de proceso" style="max-width:100%; height:auto; border-radius:8px;" />
         <figcaption style="font-size:14px; font-style:italic; margin-top:6px;">
           Tabla 1: Densidad de soluciones acuosas orgánicas.<br>
           Tomado de (Perry, R. H., Green, D. W., & Maloney, J. O. Manual del ingeniero químico, 6.ª ed., McGraw-Hill.)
@@ -1989,11 +1993,18 @@ function getContentForButton(buttonId) {
       text: `<div style="text-align: center; max-width: 600px; margin: auto;">
       <img src="images2/6.png" alt="Conversión" style="width: 100%; border: 2px solid #333; border-radius: 10px;">
       <p style="font-family: 'Comic Sans MS'; margin-top: 10px;">
-        <i>Figura: Explicación de Conversión.</i>
+        <i>Figura: Explicación de Conversión en reacciones químicas.</i>
       </p>
       </div>`,
       steps: [
       ],
+    },
+
+    "2-4-video": {
+      title: "Video explicativo",
+      text: "",
+      steps: [],
+      video: "https://www.youtube.com/embed/isj7TpFX7nc",
     },
     
     // ========== MÓDULO 2 - TEMA 5 ==========
@@ -2008,6 +2019,13 @@ function getContentForButton(buttonId) {
       steps: [
       ],
     },
+
+    "2-5-video": {
+      title: "Video explicativo",
+      text: "",
+      steps: [],
+      video: "https://www.youtube.com/embed/FTcNgQFEtoI",
+    },
     // ========== MÓDULO 2 - TEMA 6 ==========
     "2-6-que-es": {
       title: "",
@@ -2020,10 +2038,32 @@ function getContentForButton(buttonId) {
       steps: [
       ],
     },
+
+    "2-6-video": {
+      title: "Video explicativo",
+      text: "",
+      steps: [],
+      video: "https://www.youtube.com/embed/8_tWF9wtFEk",
+    },
+
     // ========== MÓDULO 2 - TEMA 6 ==========
     
     "2-7-que-es": {
-      title: "",
+      title: "Isla del Gran Saber",
+      text: `A continuación, se presentan tres ejercicios propuestos que pueden servirles como práctica. 
+      Deberán seleccionar únicamente uno (1) de ellos, resolverlo de manera completa y enviar su solución en un documento PDF al siguiente enlace.
+      <br><br><br>
+      <div class="encuesta-container">
+      <a href="https://forms.gle/1DQjWw2qJYpbsBsQ7" target="_blank" class="btn-encuesta">
+        📝 Haz clic aquí para registrar tu respuesta y asistencia
+      </a>
+      </div>`,
+      steps: [
+      ],
+    },
+
+    "2-7-ejercicios": {
+      title: "Ejercicios a resolver",
       text: `<div style="text-align: center; max-width: 600px; margin: auto;">
       <img src="images2/20.png" alt="Balance Elemental" style="width: 100%; border: 2px solid #333; border-radius: 10px;">
       </div>
@@ -2034,12 +2074,7 @@ function getContentForButton(buttonId) {
       <div style="text-align: center; max-width: 600px; margin: auto; margin-top: 20px;">
         <img src="images2/23.png" alt="Grados de Libertad" style="width: 100%; border: 2px solid #333; border-radius: 10px;">
       </div>
-      <br>
-      <div class="encuesta-container">
-      <button onclick="openFormModalWithUrl('https://forms.gle/amFUK74GvPvyyJcA8?embedded=true')" class="btn-encuesta">
-        📝 Haz clic aquí para registrar tus respuestas y asistencia
-      </button>
-      </div>`,
+      <br>`,
       steps: [
       ],
     },
