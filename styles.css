@@ -1897,6 +1897,7 @@ body {
   cursor: pointer;
   transition: background-color 0.3s ease;
   margin-top: 1rem;
+  text-decoration: none;
 }
 
 .btn-encuesta:hover {
@@ -3207,4 +3208,3 @@ body {
     z-index: 9999;
   }
 }
-
