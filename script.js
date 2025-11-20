@@ -16,6 +16,7 @@ let listenBtn = null
 const topicsWithoutAudio = [
     "1-3-conversion", // Lista de subtemas sin audio
     "2-2-que-es",
+    "2-2-desafioGL",
     "2-3-que-es",
     "2-4-que-es",
     "2-5-que-es",
@@ -374,6 +375,8 @@ const modulesData = {
         },
         sidebarButtons: [
           { id: "que-es", label: "Grados de libertad", icon: "fas fa-question-circle", type: "content" },
+          { id: "video-gl", label: 'Video explicativo', icon: "fas fa-video", type: "content" },         
+          { id: "desafioGL", label: "Desafío", icon: "fas fa-lightbulb", type: "content" },        
         ],
       },
       {
@@ -389,6 +392,8 @@ const modulesData = {
         },
         sidebarButtons: [
           { id: "que-es", label: "Velocidad de reacción", icon: "fas fa-question-circle", type: "content" },
+          { id: "video-vr", label: 'Video explicativo', icon: "fas fa-video", type: "content" },                 
+          { id: "desafioVR", label: "Desafío", icon: "fas fa-lightbulb", type: "content" },        
         ],
       },
       {
@@ -405,6 +410,7 @@ const modulesData = {
         sidebarButtons: [
           { id: "que-es", label: "Conversión", icon: "fas fa-question-circle", type: "content" },
           { id: "video", label: "Video explicativo", icon: "fas fa-video", type: "content" },
+          { id: "desafioCV", label: "Desafío", icon: "fas fa-lightbulb", type: "content" },        
         ],
       },
       {
@@ -421,6 +427,7 @@ const modulesData = {
         sidebarButtons: [
           { id: "que-es", label: "Reactivo límite y en exceso", icon: "fas fa-question-circle", type: "content" },
           { id: "video", label: "Video explicativo", icon: "fas fa-video", type: "content" },
+          { id: "desafioRT", label: "Desafío", icon: "fas fa-lightbulb", type: "content" },        
         ],
       },
       {
@@ -437,6 +444,7 @@ const modulesData = {
         sidebarButtons: [
           { id: "que-es", label: "Selectividad y Rendimiento Fraccional", icon: "fas fa-question-circle", type: "content" },
           { id: "video", label: "Video explicativo", icon: "fas fa-video", type: "content" },
+          { id: "desafioSR", label: "Desafío", icon: "fas fa-lightbulb", type: "content" },        
         ],
       },
       {
@@ -1973,6 +1981,26 @@ function getContentForButton(buttonId) {
       steps: [
       ],
     },
+    "2-2-video-gl": {
+      title: 'Video explicativo',
+      text: ``,
+      steps: [],
+      video: "https://www.youtube.com/embed/9ge26zQNSFo",
+    },
+    "2-2-desafioGL": {
+      title: "DESAFÍO",
+      text: `
+      ¡Pirata intrépido!<br>
+      Determina cuánta libertad tienes para resolver el misterio.
+      <br>
+      <div class="encuesta-container">
+      <button onclick="openFormModalWithUrl('https://docs.google.com/forms/d/e/1FAIpQLSfLvfI8_Uw5kvbC2bYkrLY8FTIchs-BEJxViDB4JEK92IWjww/viewform?embedded=true')" class="btn-encuesta">
+          📝 Haz clic aquí para comenzar tu búsqueda
+        </button>
+      </div>`,
+      steps: [],
+    },
+
     
     // ========== MÓDULO 2 - TEMA 3 (MONSTRUOS MARINOS) ==========
     "2-3-que-es": {
@@ -1985,6 +2013,25 @@ function getContentForButton(buttonId) {
       </div>`,
       steps: [
       ],
+    },
+    "2-3-video-vr": {
+      title: 'Video explicativo',
+      text: ``,
+      steps: [],
+      video: "https://www.youtube.com/embed/VjP6LrpQkCc",
+    },
+    "2-3-desafioVR": {
+      title: "DESAFÍO",
+      text: `
+      ¡Estimado camarada!<br>
+      Determina la rapidez con la que avanzan tus batallas químicas.
+      <br>
+      <div class="encuesta-container">
+      <button onclick="openFormModalWithUrl('https://docs.google.com/forms/d/e/1FAIpQLSdw4s4Gca6io-GFZeifgWblep-aGwfZHnranZjqALwiSyEggA/viewform?embedded=true')" class="btn-encuesta">
+          📝 Da clic aquí y zarpa hacia tu desafío
+        </button>
+      </div>`,
+      steps: [],
     },
     
     // ========== MÓDULO 2 - TEMA 4 (NAVEGACIÓN NOCTURNA) ==========
@@ -2004,9 +2051,20 @@ function getContentForButton(buttonId) {
       title: "Video explicativo",
       text: "",
       steps: [],
-      video: "https://www.youtube.com/embed/isj7TpFX7nc",
+      video: "https://www.youtube.com/embed/GgbWUnWI5l8",
     },
-    
+    "2-4-desafioCV": {
+      title: "DESAFÍO",
+      text: `
+      ¡Pirata investigador!<br>
+      Mide cuánto del botín logras transformar. <br>
+      <div class="encuesta-container">
+      <button onclick="openFormModalWithUrl('https://docs.google.com/forms/d/e/1FAIpQLSeG2yOKOg8PhV76CbZODtlioVWATqYqcRlwAgG0p67LJGDxIA/viewform?embedded=true')" class="btn-encuesta">
+          📝 Da un clic aquí y emprende tu travesía por el desafío
+        </button>
+      </div>`,
+      steps: [],
+    },
     // ========== MÓDULO 2 - TEMA 5 ==========
     "2-5-que-es": {
       title: "",
@@ -2024,8 +2082,21 @@ function getContentForButton(buttonId) {
       title: "Video explicativo",
       text: "",
       steps: [],
-      video: "https://www.youtube.com/embed/FTcNgQFEtoI",
+      video: "https://www.youtube.com/embed/jr9rTcc762s",
     },
+    "2-5-desafioRT": {
+      title: "DESAFÍO",
+      text: `
+      ¡Ahoy, pirata del conocimiento!<br>
+      Identifica qué recurso se agota primero en tu barco. <br>
+      <div class="encuesta-container">
+      <button onclick="openFormModalWithUrl('https://docs.google.com/forms/d/e/1FAIpQLSfFfNPZhgmPqHtBX-Q-Ht9-D3GsTFrr3jZfRFalQHxEY9HDuA/viewform?embedded=true')" class="btn-encuesta">
+          📝 Haz clic aquí y navega hacia tu misión
+        </button>
+      </div>`,
+      steps: [],
+    },
+
     // ========== MÓDULO 2 - TEMA 6 ==========
     "2-6-que-es": {
       title: "",
@@ -2043,7 +2114,19 @@ function getContentForButton(buttonId) {
       title: "Video explicativo",
       text: "",
       steps: [],
-      video: "https://www.youtube.com/embed/8_tWF9wtFEk",
+      video: "https://www.youtube.com/embed/guxpZ_GIrkM",
+    },
+    "2-6-desafioSR": {
+      title: "DESAFÍO",
+      text: `
+      ¡Pirata curioso!<br>
+      Tu tesoro está más cerca de lo que crees. <br>
+      <div class="encuesta-container">
+      <button onclick="openFormModalWithUrl('https://docs.google.com/forms/d/e/1FAIpQLSe37PEFiYSXDcntSiRAh0UB8BfIkrRliiXP5N16rfHQsiNl6g/viewform?embedded=true')" class="btn-encuesta">
+          📝 Haz clic y enfréntate a tu desafío químico
+        </button>
+      </div>`,
+      steps: [],
     },
 
     // ========== MÓDULO 2 - TEMA 6 ==========
